@@ -4,7 +4,7 @@ This is a custom visual for Power BI featuring an interactive tree.
 
 ## How to use it.
 
-1. Model your input data so it looks like a recursive hierarchy when aggregated. Only one root element is allowed.
+1. Model your input data so it looks like a recursive hierarchy when aggregated. Only one root element is allowed. See the [Sample Dataset](dataset.pbix) for an example.
 
     | Parent | Child | Measure |
     |--------|-------|---------|
