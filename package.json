@@ -2,8 +2,12 @@
   "name": "visual",
   "dependencies": {
     "@types/d3": "^3.5.41",
+    "@types/d3-hierarchy": "^1.1.6",
+    "@types/jquery": "^3.3.29",
     "d3": "^3.5.5",
     "d3-hierarchy": "^1.1.8",
+    "jquery": "^3.3.1",
+    "powerbi-visuals-tools": "^2.3.0",
     "powerbi-visuals-utils-dataviewutils": "1.2.0"
   }
 }
