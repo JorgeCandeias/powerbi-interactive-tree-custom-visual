@@ -1,0 +1,85 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Hierarchy",
+            "name": "hierarchy",
+            "kind": "Grouping"
+        },
+        {
+            "displayName": "Measure",
+            "name": "measure",
+            "kind": "Measure"
+        }
+    ],
+    "objects": {
+        "dataPoint": {
+            "displayName": "Data colors",
+            "properties": {
+                "defaultColor": {
+                    "displayName": "Default color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "showAllDataPoints": {
+                    "displayName": "Show all",
+                    "type": {
+                        "bool": true
+                    }
+                },
+                "fill": {
+                    "displayName": "Fill",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "fillRule": {
+                    "displayName": "Color saturation",
+                    "type": {
+                        "fill": {}
+                    }
+                },
+                 "fontSize": {
+                    "displayName": "Text Size",
+                    "type": {
+                        "formatting": {
+                            "fontSize": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [{
+                "hierarchy": {
+                    "max": 2
+                }
+            }],
+
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "hierarchy"
+                    }
+                },
+                "values": {
+                    "select": [{
+                        "bind": {
+                            "to": "measure"
+                        }
+                    }]
+                }
+            }
+        }
+    ]
+}
