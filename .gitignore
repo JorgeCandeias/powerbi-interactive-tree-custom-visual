@@ -1,3 +1,2 @@
-*.pbix
 .tmp/*
 node_modules/*
